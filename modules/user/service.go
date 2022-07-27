@@ -1,7 +1,7 @@
 package user
 
 type UserService interface {
-	CreateRootUser(data CreateUserDTO) User
+	CreateRootUser(data CreateUserDTO) (User, error)
 }
 
 type Hasher interface {

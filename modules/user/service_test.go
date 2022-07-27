@@ -25,7 +25,7 @@ var (
 	testUsername = "testUsername"
 )
 
-func TestCreateRootUser(test *testing.T) {
+func TestCreateRootUser_UserService(test *testing.T) {
 	repository := UserRepositoryMock{}
 	hasher := HasherMock{}
 	service := UserServiceImpl{repository, hasher}
