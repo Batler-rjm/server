@@ -1,6 +1,6 @@
 package user
 
-type CreateRootUser struct {
+type CreateUserDTO struct {
 	Username string
 	Password string
 }

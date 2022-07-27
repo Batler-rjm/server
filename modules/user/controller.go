@@ -1,5 +1,5 @@
 package user
 
 type UserController interface {
-	CreateRootUser(data CreateRootUser) UserPresenter
+	CreateRootUser(data CreateUserDTO) (UserPresenter, error)
 }
