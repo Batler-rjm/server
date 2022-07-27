@@ -1,0 +1,8 @@
+[Unit]
+Description=Batler Server Remote Jobs Manager
+
+[Service]
+ExecStart=/usr/bin/batler-server
+KillMode=mixed
+Restart=always
+IgnoreSIGPIPE=no
