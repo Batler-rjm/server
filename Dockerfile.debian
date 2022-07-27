@@ -1,0 +1,13 @@
+FROM golang AS build
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN go build
+
+FROM debian
+
+COPY --from=build /usr/src/app/server /usr/bin/batler-server
+
+CMD [ "/usr/bin/batler-server" ]
